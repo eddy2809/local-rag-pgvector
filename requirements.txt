@@ -1,0 +1,8 @@
+pymupdf
+psycopg[binary]
+pgvector
+ollama
+numpy
+tokenizers
+python-dotenv
+dotenv
