@@ -13,3 +13,4 @@ PG_DSN = (
 LLM_MODEL = os.getenv("LLM_MODEL", "qwen3:8b")
 EMBED_MODEL = os.getenv("EMBED_MODEL", "bge-m3")
 EMBED_DIM = 1024
+TOKENIZER_NAME = os.getenv("TOKENIZER_NAME", "BAAI/bge-m3")
