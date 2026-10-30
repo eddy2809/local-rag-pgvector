@@ -14,7 +14,7 @@ from rag.retrieval import dense_search
 
 QUESTIONS_FILE = Path("eval/questions.jsonl")
 RESULTS_DIR = Path("results")
-K_VALUES = (1, 3, 5)
+K_VALUES = (1, 2, 3, 5)
 MAX_K = 10  # retrieval depth, also used for MRR
 
 SEARCH_METHODS = {"dense": dense_search}
