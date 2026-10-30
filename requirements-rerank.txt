@@ -1,0 +1,4 @@
+# Optional: cross-encoder re-ranking (experiment 5).
+# Install PyTorch with CUDA first, using the command generated on pytorch.org.
+-r requirements.txt
+sentence-transformers

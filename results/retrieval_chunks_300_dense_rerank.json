@@ -1,0 +1,596 @@
+{
+  "table": "chunks_300",
+  "method": "dense_rerank",
+  "depth": 10,
+  "timestamp": "2026-10-30T17:39:18",
+  "overall": {
+    "n": 26,
+    "hit@1": 0.6153846153846154,
+    "hit@2": 0.7692307692307693,
+    "hit@3": 0.8076923076923077,
+    "hit@5": 0.8461538461538461,
+    "mrr@10": 0.7147435897435896
+  },
+  "by_type": {
+    "lexical": {
+      "n": 13,
+      "hit@1": 0.8461538461538461,
+      "hit@2": 0.9230769230769231,
+      "hit@3": 0.9230769230769231,
+      "hit@5": 0.9230769230769231,
+      "mrr@10": 0.8846153846153846
+    },
+    "paraphrase": {
+      "n": 11,
+      "hit@1": 0.45454545454545453,
+      "hit@2": 0.5454545454545454,
+      "hit@3": 0.6363636363636364,
+      "hit@5": 0.7272727272727273,
+      "mrr@10": 0.553030303030303
+    },
+    "table": {
+      "n": 2,
+      "hit@1": 0.0,
+      "hit@2": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "mrr@10": 0.5
+    }
+  },
+  "latency": {
+    "embed_ms_median": 12.666149998040055,
+    "embed_ms_p95": 17.62387500184559,
+    "search_ms_median": 1.5929999990476063,
+    "search_ms_p95": 2.1577750012511387,
+    "rerank_ms_median": 170.3487499999028,
+    "rerank_ms_p95": 178.52522500106716
+  },
+  "records": [
+    {
+      "id": "q01",
+      "type": "lexical",
+      "question": "Chi è il relatore della tesi?",
+      "rank": 1,
+      "retrieved": [
+        0,
+        10,
+        178,
+        16,
+        11,
+        5,
+        184,
+        8,
+        40,
+        18
+      ],
+      "embed_ms": 12.583299998368602,
+      "search_ms": 2.194100001361221,
+      "rerank_ms": 172.74860000179615
+    },
+    {
+      "id": "q02",
+      "type": "lexical",
+      "question": "Per quale visore è stata sviluppata l'applicazione Nairobi?",
+      "rank": 1,
+      "retrieved": [
+        0,
+        11,
+        58,
+        55,
+        178,
+        24,
+        144,
+        59,
+        10,
+        61
+      ],
+      "embed_ms": 13.32419999744161,
+      "search_ms": 1.6546000006201211,
+      "rerank_ms": 173.03249999895343
+    },
+    {
+      "id": "q03",
+      "type": "lexical",
+      "question": "Quante persone hanno partecipato allo studio con gli utenti?",
+      "rank": 1,
+      "retrieved": [
+        155,
+        156,
+        154,
+        1,
+        176,
+        159,
+        172,
+        177,
+        171,
+        170
+      ],
+      "embed_ms": 10.50039999972796,
+      "search_ms": 1.660099998844089,
+      "rerank_ms": 169.41009999936796
+    },
+    {
+      "id": "q04",
+      "type": "paraphrase",
+      "question": "Per quale luogo era stata pensata in origine la prima versione di Nairobi?",
+      "rank": 1,
+      "retrieved": [
+        11,
+        16,
+        17,
+        63,
+        60,
+        42,
+        61,
+        62,
+        178,
+        10
+      ],
+      "embed_ms": 17.63770000252407,
+      "search_ms": 1.6753999989305157,
+      "rerank_ms": 169.99169999689911
+    },
+    {
+      "id": "q05",
+      "type": "lexical",
+      "question": "Quale algoritmo viene usato per calcolare il cammino minimo?",
+      "rank": 1,
+      "retrieved": [
+        95,
+        35,
+        34,
+        98,
+        33,
+        99,
+        1,
+        102,
+        97,
+        93
+      ],
+      "embed_ms": 10.751800000434741,
+      "search_ms": 2.2419000015361235,
+      "rerank_ms": 170.11610000190558
+    },
+    {
+      "id": "q06",
+      "type": "lexical",
+      "question": "Quanti nodi compongono il grafo usato per il calcolo del percorso?",
+      "rank": 1,
+      "retrieved": [
+        94,
+        34,
+        95,
+        93,
+        35,
+        170,
+        58,
+        33,
+        99,
+        101
+      ],
+      "embed_ms": 17.58239999981015,
+      "search_ms": 1.5638000004400965,
+      "rerank_ms": 178.88540000058128
+    },
+    {
+      "id": "q07",
+      "type": "paraphrase",
+      "question": "Perché è stata abbandonata la navigazione basata sulla navmesh calcolata a runtime?",
+      "rank": 1,
+      "retrieved": [
+        62,
+        61,
+        63,
+        111,
+        140,
+        105,
+        110,
+        4,
+        15,
+        23
+      ],
+      "embed_ms": 14.045300002180738,
+      "search_ms": 1.544799997645896,
+      "rerank_ms": 176.41070000172476
+    },
+    {
+      "id": "q08",
+      "type": "lexical",
+      "question": "Quale servizio è usato per il riconoscimento e la sintesi vocale?",
+      "rank": 1,
+      "retrieved": [
+        69,
+        140,
+        151,
+        70,
+        48,
+        137,
+        128,
+        79,
+        49,
+        129
+      ],
+      "embed_ms": 10.663599998224527,
+      "search_ms": 1.5330000023823231,
+      "rerank_ms": 170.39819999990868
+    },
+    {
+      "id": "q09",
+      "type": "paraphrase",
+      "question": "Come mai la voce dell'assistente ha una pronuncia inglese?",
+      "rank": 1,
+      "retrieved": [
+        70,
+        173,
+        167,
+        151,
+        165,
+        164,
+        168,
+        131,
+        79,
+        172
+      ],
+      "embed_ms": 11.33250000202679,
+      "search_ms": 1.6570999978284817,
+      "rerank_ms": 170.2992999998969
+    },
+    {
+      "id": "q10",
+      "type": "lexical",
+      "question": "Quale modello linguistico è stato adottato e quale ha sostituito?",
+      "rank": 1,
+      "retrieved": [
+        71,
+        43,
+        13,
+        152,
+        116,
+        125,
+        17,
+        45,
+        138,
+        4
+      ],
+      "embed_ms": 12.748999997711508,
+      "search_ms": 1.6090999997686595,
+      "rerank_ms": 169.92499999832944
+    },
+    {
+      "id": "q11",
+      "type": "paraphrase",
+      "question": "Quali difetti mostrava Llama 3.1 che hanno portato a cambiare modello?",
+      "rank": 1,
+      "retrieved": [
+        129,
+        71,
+        174,
+        173,
+        70,
+        168,
+        88,
+        152,
+        180,
+        142
+      ],
+      "embed_ms": 12.354899998172186,
+      "search_ms": 1.521300000604242,
+      "rerank_ms": 170.06390000096872
+    },
+    {
+      "id": "q12",
+      "type": "paraphrase",
+      "question": "Perché non è stato possibile eseguire il modello linguistico direttamente sul visore?",
+      "rank": 4,
+      "retrieved": [
+        133,
+        9,
+        15,
+        138,
+        55,
+        135,
+        71,
+        152,
+        140,
+        174
+      ],
+      "embed_ms": 10.823399999935646,
+      "search_ms": 1.691400000709109,
+      "rerank_ms": 170.67600000154926
+    },
+    {
+      "id": "q13",
+      "type": "lexical",
+      "question": "Quanta memoria ha il visore e quanta ne può usare una singola applicazione?",
+      "rank": 1,
+      "retrieved": [
+        134,
+        55,
+        24,
+        31,
+        47,
+        15,
+        9,
+        58,
+        59,
+        56
+      ],
+      "embed_ms": 11.652799999865238,
+      "search_ms": 1.474900000175694,
+      "rerank_ms": 177.44470000252477
+    },
+    {
+      "id": "q14",
+      "type": "paraphrase",
+      "question": "In che modo il modello 3D viene sovrapposto correttamente all'edificio reale?",
+      "rank": null,
+      "retrieved": [
+        89,
+        20,
+        85,
+        82,
+        1,
+        74,
+        72,
+        86,
+        87,
+        73
+      ],
+      "embed_ms": 13.135999997757608,
+      "search_ms": 1.498500001616776,
+      "rerank_ms": 177.34919999929843
+    },
+    {
+      "id": "q15",
+      "type": "paraphrase",
+      "question": "Perché dell'orientamento del QR code si considera solo la rotazione orizzontale?",
+      "rank": 3,
+      "retrieved": [
+        108,
+        84,
+        85,
+        144,
+        143,
+        109,
+        86,
+        120,
+        2,
+        78
+      ],
+      "embed_ms": 10.690200000681216,
+      "search_ms": 1.4785000021220185,
+      "rerank_ms": 176.84700000245357
+    },
+    {
+      "id": "q16",
+      "type": "lexical",
+      "question": "Ogni quanto vengono aggiornati i dati sull'utilizzo delle aule?",
+      "rank": null,
+      "retrieved": [
+        149,
+        59,
+        14,
+        112,
+        183,
+        9,
+        117,
+        5,
+        126,
+        119
+      ],
+      "embed_ms": 13.910800000303425,
+      "search_ms": 1.5466000004380476,
+      "rerank_ms": 170.1924000008148
+    },
+    {
+      "id": "q17",
+      "type": "paraphrase",
+      "question": "Come vengono recuperate le prenotazioni delle aule se il portale non ha un'API?",
+      "rank": null,
+      "retrieved": [
+        134,
+        112,
+        7,
+        141,
+        14,
+        51,
+        9,
+        114,
+        117,
+        118
+      ],
+      "embed_ms": 14.674899997771718,
+      "search_ms": 1.73700000232202,
+      "rerank_ms": 176.85920000076294
+    },
+    {
+      "id": "q18",
+      "type": "lexical",
+      "question": "Quale velocità di camminata si assume per stimare il tempo di percorrenza?",
+      "rank": 1,
+      "retrieved": [
+        111,
+        110,
+        170,
+        162,
+        145,
+        95,
+        34,
+        28,
+        61,
+        1
+      ],
+      "embed_ms": 17.349100002320483,
+      "search_ms": 1.576899998326553,
+      "rerank_ms": 175.22850000023027
+    },
+    {
+      "id": "q19",
+      "type": "lexical",
+      "question": "Qual è il valore massimo usato per il raccordo delle curve del percorso?",
+      "rank": 1,
+      "retrieved": [
+        103,
+        97,
+        102,
+        163,
+        170,
+        99,
+        93,
+        33,
+        25,
+        94
+      ],
+      "embed_ms": 12.346599996817531,
+      "search_ms": 1.4406000009330455,
+      "rerank_ms": 169.32399999859626
+    },
+    {
+      "id": "q20",
+      "type": "paraphrase",
+      "question": "Come si evita che la freccia del percorso si veda attraverso i muri?",
+      "rank": 1,
+      "retrieved": [
+        91,
+        90,
+        62,
+        26,
+        93,
+        146,
+        101,
+        85,
+        94,
+        34
+      ],
+      "embed_ms": 11.527499998919666,
+      "search_ms": 1.573999998072395,
+      "rerank_ms": 169.36710000300081
+    },
+    {
+      "id": "q21",
+      "type": "lexical",
+      "question": "Quale funzionalità è stata richiesta dal maggior numero di partecipanti?",
+      "rank": 1,
+      "retrieved": [
+        165,
+        166,
+        167,
+        171,
+        1,
+        159,
+        160,
+        176,
+        154,
+        156
+      ],
+      "embed_ms": 10.477899999386864,
+      "search_ms": 1.4946000010240823,
+      "rerank_ms": 168.11070000039763
+    },
+    {
+      "id": "q22",
+      "type": "paraphrase",
+      "question": "Quali problemi tecnici sono emersi usando il visore per molte sessioni di fila?",
+      "rank": null,
+      "retrieved": [
+        169,
+        157,
+        23,
+        15,
+        158,
+        55,
+        174,
+        134,
+        47,
+        177
+      ],
+      "embed_ms": 17.684400001598988,
+      "search_ms": 1.4971000018704217,
+      "rerank_ms": 175.95499999879394
+    },
+    {
+      "id": "q23",
+      "type": "paraphrase",
+      "question": "Cosa è stato suggerito per far capire all'utente quando può iniziare a parlare con l'assistente?",
+      "rank": 2,
+      "retrieved": [
+        172,
+        167,
+        166,
+        182,
+        78,
+        171,
+        173,
+        183,
+        77,
+        10
+      ],
+      "embed_ms": 14.508200001728255,
+      "search_ms": 2.0488000009208918,
+      "rerank_ms": 185.86119999963557
+    },
+    {
+      "id": "q24",
+      "type": "lexical",
+      "question": "Come si orientavano i partecipanti prima di provare l'applicazione?",
+      "rank": 2,
+      "retrieved": [
+        160,
+        161,
+        1,
+        158,
+        156,
+        167,
+        171,
+        164,
+        172,
+        155
+      ],
+      "embed_ms": 14.230699998734053,
+      "search_ms": 1.7291000003751833,
+      "rerank_ms": 169.84750000119675
+    },
+    {
+      "id": "q25",
+      "type": "table",
+      "question": "Qual è l'autonomia dichiarata del Meta Quest 3?",
+      "rank": 2,
+      "retrieved": [
+        25,
+        26,
+        0,
+        60,
+        157,
+        12,
+        61,
+        65,
+        178,
+        179
+      ],
+      "embed_ms": 11.06209999852581,
+      "search_ms": 1.7049999987648334,
+      "rerank_ms": 168.1614000008267
+    },
+    {
+      "id": "q26",
+      "type": "table",
+      "question": "Quanti partecipanti hanno dato un voto pari a 3 alla rappresentazione del percorso?",
+      "rank": 2,
+      "retrieved": [
+        170,
+        163,
+        160,
+        156,
+        1,
+        162,
+        164,
+        165,
+        171,
+        155
+      ],
+      "embed_ms": 13.734000000113156,
+      "search_ms": 1.6605999990133569,
+      "rerank_ms": 170.1777000016591
+    }
+  ]
+}

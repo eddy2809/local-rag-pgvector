@@ -10,7 +10,7 @@ from rag.db import table_identifier
 from rag.embeddings import embed_query
 
 DENSE_SEARCH = """
-SELECT chunk_index, page_start, page_end, label_start, label_end, content,
+SELECT doc_id, chunk_index, page_start, page_end, label_start, label_end, content,
        1 - (embedding <=> %(q)s) AS similarity
 FROM {table}
 ORDER BY embedding <=> %(q)s
@@ -20,6 +20,7 @@ LIMIT %(k)s
 
 @dataclass
 class RetrievedChunk:
+    doc_id: str
     chunk_index: int
     page_start: int
     page_end: int
@@ -54,7 +55,7 @@ def dense_search(
 # plainto_tsquery joins all words with AND (&): for natural-language questions almost no chunk
 # would match, so the ANDs are turned into ORs (|) and ranking rewards chunks with more matches.
 LEXICAL_SEARCH = """
-SELECT chunk_index, page_start, page_end, label_start, label_end, content,
+SELECT doc_id, chunk_index, page_start, page_end, label_start, label_end, content,
        ts_rank(content_tsv, query) AS score
 FROM {table},
      to_tsquery('italian', replace(plainto_tsquery('italian', %(q)s)::text, ' & ', ' | ')) AS query
@@ -86,7 +87,7 @@ fused AS (
     FROM (SELECT * FROM dense UNION ALL SELECT * FROM lexical) AS ranked
     GROUP BY id
 )
-SELECT c.chunk_index, c.page_start, c.page_end, c.label_start, c.label_end, c.content, f.score
+SELECT c.doc_id, c.chunk_index, c.page_start, c.page_end, c.label_start, c.label_end, c.content, f.score
 FROM fused AS f
 JOIN {table} AS c USING (id)
 ORDER BY f.score DESC

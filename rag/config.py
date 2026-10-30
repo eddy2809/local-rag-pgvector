@@ -15,3 +15,4 @@ EMBED_MODEL = os.getenv("EMBED_MODEL", "bge-m3")
 EMBED_DIM = 1024
 TOKENIZER_NAME = os.getenv("TOKENIZER_NAME", "BAAI/bge-m3")
 NO_ANSWER = os.getenv("NO_ANSWER")
+RERANKER_MODEL = os.getenv("RERANKER_MODEL", "BAAI/bge-reranker-v2-m3")
