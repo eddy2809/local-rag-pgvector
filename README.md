@@ -196,17 +196,6 @@ Findings:
 24 of 25 non-abstained answers cite at least one source; when the evidence chunk was retrieved, the
 answer cited it in 17 of 19 cases. One answer abstained although the evidence was among the sources.
 
-### Error analysis
-
-- The 6 retrieval misses of the dense baseline were checked by hand: 5 are genuine retrieval errors and
-  1 is a false negative of the annotation (another passage answers the question). The metric is
-  therefore conservative.
-- Two questions (q14, q16) are missed by every configuration: the evidence is not even among the top 30
-  candidates, so re-ranking cannot recover it. The answer shares no words with the question
-  ("ogni quanto vengono aggiornati" vs "una sola volta, all'avvio"): this is a first-stage recall
-  problem, not a ranking problem.
-- After re-ranking, q22 drops the annotated passage in favour of another one that also answers the
-  question, which however ends up 6th, just outside the top 5.
 
 ### Latency (RTX 4090)
 
@@ -219,25 +208,6 @@ answer cited it in 17 of 19 cases. One answer abstained although the evidence wa
 
 With 185 vectors an exact scan takes about 1 ms, so the HNSW index brings no measurable benefit here;
 it becomes relevant from hundreds of thousands of vectors, at the cost of approximate results.
-
-## Limitations
-
-- Small evaluation set (26 answerable questions), single document, graded by the author of both the
-  system and the document.
-- Tables lose their structure during PDF extraction.
-- The BM25 index lives in memory and must be rebuilt when documents change.
-- The answer evaluation covers the baseline configuration only.
-
-## Possible next steps
-
-- **First-stage recall**: query rewriting or HyDE (embedding a hypothetical answer) for questions
-  whose wording differs from the text.
-- **Small-to-big retrieval**: search on small chunks, pass the surrounding larger section to the LLM.
-- **Section-aware chunking**: prepend document and section titles to each chunk.
-- **Larger evaluation set**: LLM-generated questions with manual review of a sample; LLM-as-judge
-  (e.g. RAGAS) for faithfulness at scale.
-- **Faster re-ranking**: fp16 inference, fewer candidates.
-- **Layout-aware parsing** for tables (e.g. `page.find_tables()`, docling).
 
 ## Language
 
