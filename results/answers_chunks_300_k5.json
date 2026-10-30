@@ -1,0 +1,515 @@
+{
+  "table": "chunks_300",
+  "k": 5,
+  "timestamp": "2026-10-30T11:38:07",
+  "records": [
+    {
+      "id": "q01",
+      "type": "lexical",
+      "question": "Chi è il relatore della tesi?",
+      "expected_answer": "Il Prof. Giovanni M. Farinella.",
+      "answerable": true,
+      "answer": "Il relatore della tesi è Chiar.mo Prof. Giovanni M. Farinella [1].",
+      "abstained": false,
+      "cited_ids": [
+        1
+      ],
+      "cited_sources": "[1] pp. 1",
+      "evidence_rank": 1,
+      "cites_evidence": true,
+      "total_seconds": 0.4275486000001365,
+      "output_tokens": 22
+    },
+    {
+      "id": "q02",
+      "type": "lexical",
+      "question": "Per quale visore è stata sviluppata l'applicazione Nairobi?",
+      "expected_answer": "Per il Meta Quest 3.",
+      "answerable": true,
+      "answer": "L'applicazione Nairobi è stata sviluppata per Microsoft Hololens di prima generazione [2].",
+      "abstained": false,
+      "cited_ids": [
+        2
+      ],
+      "cited_sources": "[2] pp. 9-10",
+      "evidence_rank": null,
+      "cites_evidence": false,
+      "total_seconds": 0.40483169999970414,
+      "output_tokens": 24
+    },
+    {
+      "id": "q03",
+      "type": "lexical",
+      "question": "Quante persone hanno partecipato allo studio con gli utenti?",
+      "expected_answer": "Dieci persone.",
+      "answerable": true,
+      "answer": "Dieci persone hanno partecipato allo studio [1][2].",
+      "abstained": false,
+      "cited_ids": [
+        1,
+        2
+      ],
+      "cited_sources": "[1] pp. 81, [2] pp. 80-81",
+      "evidence_rank": 1,
+      "cites_evidence": true,
+      "total_seconds": 0.36751460000004954,
+      "output_tokens": 16
+    },
+    {
+      "id": "q04",
+      "type": "paraphrase",
+      "question": "Per quale luogo era stata pensata in origine la prima versione di Nairobi?",
+      "expected_answer": "Come guida per il Museo dei Saperi e delle Mirabilia Siciliane, a Catania.",
+      "answerable": true,
+      "answer": "La prima versione di Nairobi era pensata per il Museo dei Saperi e delle Mirabilia Siciliane a Catania [1].",
+      "abstained": false,
+      "cited_ids": [
+        1
+      ],
+      "cited_sources": "[1] pp. 9-10",
+      "evidence_rank": 1,
+      "cites_evidence": true,
+      "total_seconds": 0.45766120000007504,
+      "output_tokens": 31
+    },
+    {
+      "id": "q05",
+      "type": "lexical",
+      "question": "Quale algoritmo viene usato per calcolare il cammino minimo?",
+      "expected_answer": "L'algoritmo di Dijkstra, con peso pari alla distanza euclidea fra i nodi.",
+      "answerable": true,
+      "answer": "L'algoritmo di Dijkstra viene usato per calcolare il cammino minimo [1].",
+      "abstained": false,
+      "cited_ids": [
+        1
+      ],
+      "cited_sources": "[1] pp. 51-52",
+      "evidence_rank": 1,
+      "cites_evidence": true,
+      "total_seconds": 0.3978566000000683,
+      "output_tokens": 23
+    },
+    {
+      "id": "q06",
+      "type": "lexical",
+      "question": "Quanti nodi compongono il grafo usato per il calcolo del percorso?",
+      "expected_answer": "Ventisei nodi.",
+      "answerable": true,
+      "answer": "Il grafo utilizzato per il calcolo del percorso comprende ventisei nodi [1].",
+      "abstained": false,
+      "cited_ids": [
+        1
+      ],
+      "cited_sources": "[1] pp. 51",
+      "evidence_rank": 1,
+      "cites_evidence": true,
+      "total_seconds": 0.4043228000000454,
+      "output_tokens": 24
+    },
+    {
+      "id": "q07",
+      "type": "paraphrase",
+      "question": "Perché è stata abbandonata la navigazione basata sulla navmesh calcolata a runtime?",
+      "expected_answer": "Perché nella navigazione multipiano i percorsi venivano generati sui passamano delle scale o in altri punti non percorribili; si è quindi adottato un grafo di waypoint.",
+      "answerable": true,
+      "answer": "La navigazione basata sulla navmesh calcolata a runtime è stata abbandonata a causa di alcune difficoltà riscontrate nella navigazione multipiano del dipartimento, dove i percorsi venivano generati sui passamani delle scale o comunque in altri posti non idonei [1].",
+      "abstained": false,
+      "cited_ids": [
+        1
+      ],
+      "cited_sources": "[1] pp. 36-37",
+      "evidence_rank": 1,
+      "cites_evidence": true,
+      "total_seconds": 0.7078734000001532,
+      "output_tokens": 68
+    },
+    {
+      "id": "q08",
+      "type": "lexical",
+      "question": "Quale servizio è usato per il riconoscimento e la sintesi vocale?",
+      "expected_answer": "Il servizio Wit.ai.",
+      "answerable": true,
+      "answer": "Il riconoscimento e la sintesi vocale sono realizzati mediante il servizio Wit.ai [1][2].",
+      "abstained": false,
+      "cited_ids": [
+        1,
+        2
+      ],
+      "cited_sources": "[1] pp. 39-40, [2] pp. 40",
+      "evidence_rank": 1,
+      "cites_evidence": true,
+      "total_seconds": 0.4276446999997461,
+      "output_tokens": 27
+    },
+    {
+      "id": "q09",
+      "type": "paraphrase",
+      "question": "Come mai la voce dell'assistente ha una pronuncia inglese?",
+      "expected_answer": "Perché la sintesi vocale è configurata per l'inglese: la configurazione italiana causava malfunzionamenti nell'integrazione che non è stato possibile risolvere.",
+      "answerable": true,
+      "answer": "La voce dell'assistente ha una pronuncia inglese perché la configurazione della componente di sintesi vocale per la lingua italiana ha dato luogo a malfunzionamenti nell'integrazione con l'ambiente di sviluppo, che non è stato possibile risolvere [1]. Questo ha causato che il sistema pronunci testi italiani con una pronuncia propria della lingua inglese [1]. Inoltre, questa disomogeneità è stata rilevata come un limite nel paragrafo 3.2.4 e segnalata da alcuni partecipanti come difficoltà di comprensione [5].",
+      "abstained": false,
+      "cited_ids": [
+        1,
+        5
+      ],
+      "cited_sources": "[1] pp. 40, [5] pp. 86",
+      "evidence_rank": 1,
+      "cites_evidence": true,
+      "total_seconds": 1.2277427999997599,
+      "output_tokens": 142
+    },
+    {
+      "id": "q10",
+      "type": "lexical",
+      "question": "Quale modello linguistico è stato adottato e quale ha sostituito?",
+      "expected_answer": "Qwen3 da 8 miliardi di parametri, in sostituzione di Llama 3.1 8B.",
+      "answerable": true,
+      "answer": "Il modello linguistico adottato inizialmente è stato Llama 3.1 8B, e è stato sostituito da Qwen3 nella taglia da otto miliardi di parametri [2][5].",
+      "abstained": false,
+      "cited_ids": [
+        2,
+        5
+      ],
+      "cited_sources": "[2] pp. 40-41, [5] pp. 66-67",
+      "evidence_rank": 2,
+      "cites_evidence": true,
+      "total_seconds": 0.609346799999912,
+      "output_tokens": 53
+    },
+    {
+      "id": "q11",
+      "type": "paraphrase",
+      "question": "Quali difetti mostrava Llama 3.1 che hanno portato a cambiare modello?",
+      "expected_answer": "Errori di ragionamento temporale (eventi conclusi indicati come in corso), confusione fra aule con nomi simili e risposte talvolta in inglese.",
+      "answerable": true,
+      "answer": "Llama 3.1 presentava difetti che hanno portato alla sua sostituzione con Qwen3. In particolare, il modello precedente produceva risposte talora incoerenti rispetto ai dati sull'utilizzo degli spazi forniti nel contesto [2]. La sostituzione è stata determinata da una valutazione qualitativa delle risposte prodotte sul dominio applicativo specifico, non da considerazioni generali sulle prestazioni dei due modelli [2].",
+      "abstained": false,
+      "cited_ids": [
+        2
+      ],
+      "cited_sources": "[2] pp. 40-41",
+      "evidence_rank": 1,
+      "cites_evidence": false,
+      "total_seconds": 1.0092549000000872,
+      "output_tokens": 111
+    },
+    {
+      "id": "q12",
+      "type": "paraphrase",
+      "question": "Perché non è stato possibile eseguire il modello linguistico direttamente sul visore?",
+      "expected_answer": "Perché la memoria residua veniva saturata durante la generazione, soprattutto dagli stati legati al lungo contesto con i dati delle aule, e i tempi di risposta arrivavano a trenta secondi; il vincolo era la combinazione fra modello e contesto, non solo la dimensione del modello.",
+      "answerable": true,
+      "answer": "L'esecuzione del modello linguistico direttamente sul visore non è stata possibile a causa del vincolo posto dalle risorse del dispositivo. Il visore impiegato dispone di otto gigabyte di memoria complessiva, ma la documentazione del produttore fissa in poco meno di sei gigabyte il limite assegnabile a una singola applicazione [4]. Questo limite non descrive tuttavia la memoria effettivamente disponibile, poiché essa rappresenta il tetto formale e non tiene conto dell'utlizzo preesistente [4]. Inoltre, l'esecuzione locale richiede la collocazione dell'inferenza del modello linguistico sul visore, il che condiziona in particolare la collocazione dell'inferenza del modello linguistico, discussa nel paragrafo 3.4 [2].",
+      "abstained": false,
+      "cited_ids": [
+        2,
+        4
+      ],
+      "cited_sources": "[2] pp. 32-33, [4] pp. 69",
+      "evidence_rank": null,
+      "cites_evidence": false,
+      "total_seconds": 1.603760200000579,
+      "output_tokens": 196
+    },
+    {
+      "id": "q13",
+      "type": "lexical",
+      "question": "Quanta memoria ha il visore e quanta ne può usare una singola applicazione?",
+      "expected_answer": "Otto gigabyte complessivi, con un limite di poco meno di sei gigabyte per applicazione.",
+      "answerable": true,
+      "answer": "Il visore dispone di otto gigabyte di memoria complessiva, mentre la documentazione del produttore fissa in poco meno di sei gigabyte il limite assegnabile a una singola applicazione [32].",
+      "abstained": false,
+      "cited_ids": [],
+      "cited_sources": "",
+      "evidence_rank": 1,
+      "cites_evidence": false,
+      "total_seconds": 0.5992928000000575,
+      "output_tokens": 50
+    },
+    {
+      "id": "q14",
+      "type": "paraphrase",
+      "question": "In che modo il modello 3D viene sovrapposto correttamente all'edificio reale?",
+      "expected_answer": "Inquadrando un QR code affisso alla parete: si calcola prima la rotazione attorno all'asse verticale e poi la traslazione che porta l'ancora virtuale a coincidere con il marcatore.",
+      "answerable": true,
+      "answer": "Il modello 3D viene sovrapposto all'edificio reale attraverso un allineamento che stabilisce la corrispondenza tra il sistema di riferimento del dispositivo e quello del modello digitale dell'edificio [2]. Questo allineamento è ottenuto riconoscendo un marcatore fisico affisso a una parete dell'edificio, in una posizione nota e riprodotta nel modello [2]. Inoltre, il modello 3D funge anche da occlusore della rappresentazione del percorso, con le sue superfici trattate in modo da inibire la resa cromatica ma preservare la partecipazione alla determinazione della profondità, in modo che gli elementi virtuali collocati al di là di esse vengano esclusi dalla resa [5]. L'assegnazione di materiali occludenti avviene al termine della sequenza di scansione, contestualmente all'attivazione del modello e al suo allineamento [5]. Non lo so: l'informazione non è presente nei documenti.",
+      "abstained": false,
+      "cited_ids": [
+        2,
+        5
+      ],
+      "cited_sources": "[2] pp. 45-46, [5] pp. 49-50",
+      "evidence_rank": null,
+      "cites_evidence": false,
+      "total_seconds": 1.976238199999898,
+      "output_tokens": 250
+    },
+    {
+      "id": "q15",
+      "type": "paraphrase",
+      "question": "Perché dell'orientamento del QR code si considera solo la rotazione orizzontale?",
+      "expected_answer": "Perché un marcatore affisso con una leggera inclinazione inclinerebbe tutto il modello, facendo sollevare il percorso dal pavimento con un errore crescente con la distanza.",
+      "answerable": true,
+      "answer": "La rotazione orizzontale del QR code viene considerata perché la rotazione attorno agli assi diversi da quello verticale non trasporta alcuna informazione utile, poiché l'edificio reale è per costruzione orizzontale [1]. Inoltre, la proiezione sul piano orizzontale annulla la componente verticale e normalizza le direzioni, permettendo di calcolare l'angolo che separa la seconda direzione dalla prima attorno all'asse verticale [1]. Questo approccio evita che eventuali imprecisioni nell'affissione del marcatore fisico si trasferiscano all'intero modello [1].",
+      "abstained": false,
+      "cited_ids": [
+        1
+      ],
+      "cited_sources": "[1] pp. 47",
+      "evidence_rank": 1,
+      "cites_evidence": true,
+      "total_seconds": 1.3466252000002896,
+      "output_tokens": 160
+    },
+    {
+      "id": "q16",
+      "type": "lexical",
+      "question": "Ogni quanto vengono aggiornati i dati sull'utilizzo delle aule?",
+      "expected_answer": "Una sola volta, all'avvio dell'applicazione.",
+      "answerable": true,
+      "answer": "I dati sull'utilizzo delle aule vengono acquisiti in modo unico, anziché in modo periodico, e non vengono aggiornati durante la sessione dell'utente. L'informazione presentata all'utente è aggiornata all'istante di avvio dell'applicazione, non all'istante della consultazione [3].",
+      "abstained": false,
+      "cited_ids": [
+        3
+      ],
+      "cited_sources": "[3] pp. 61-62",
+      "evidence_rank": null,
+      "cites_evidence": false,
+      "total_seconds": 0.8153492999995251,
+      "output_tokens": 83
+    },
+    {
+      "id": "q17",
+      "type": "paraphrase",
+      "question": "Come vengono recuperate le prenotazioni delle aule se il portale non ha un'API?",
+      "expected_answer": "Riproducendo le richieste del browser: una GET per ottenere il cookie di sessione e una POST all'endpoint delle prenotazioni, estraendo poi i dati con un'espressione regolare.",
+      "answerable": true,
+      "answer": "Le prenotazioni delle aule vengono recuperate mediante la riproduzione delle informazioni disponibili nell'applicativo web del dipartimento, poiché non esiste un'interfaccia programmatica per i client esterni [2]. I dati sono estratti analizzando lo schema testuale della risposta dell'applicativo, identificando gli istanti di inizio e termine, l'identificativo dello spazio e la denominazione dell'aula [4][5]. Gli istanti temporali vengono convertiti nell'ora locale, mentre l'identificativo dello spazio è tradotto nella denominazione dell'aula mediante una tabella di corrispondenza [4].",
+      "abstained": false,
+      "cited_ids": [
+        2,
+        4,
+        5
+      ],
+      "cited_sources": "[2] pp. 59-60, [4] pp. 60, [5] pp. 61-62",
+      "evidence_rank": null,
+      "cites_evidence": false,
+      "total_seconds": 1.3318011000001206,
+      "output_tokens": 158
+    },
+    {
+      "id": "q18",
+      "type": "lexical",
+      "question": "Quale velocità di camminata si assume per stimare il tempo di percorrenza?",
+      "expected_answer": "Un metro al secondo.",
+      "answerable": true,
+      "answer": "La velocità di percorrenza assunta per stimare il tempo di percorrenza è di un metro al secondo [2].",
+      "abstained": false,
+      "cited_ids": [
+        2
+      ],
+      "cited_sources": "[2] pp. 58",
+      "evidence_rank": 1,
+      "cites_evidence": true,
+      "total_seconds": 0.45748460000004343,
+      "output_tokens": 30
+    },
+    {
+      "id": "q19",
+      "type": "lexical",
+      "question": "Qual è il valore massimo usato per il raccordo delle curve del percorso?",
+      "expected_answer": "60 cm.",
+      "answerable": true,
+      "answer": "Il valore massimo adottato per il raggio di raccordo è di 60 cm [1].",
+      "abstained": false,
+      "cited_ids": [
+        1
+      ],
+      "cited_sources": "[1] pp. 54-55",
+      "evidence_rank": 1,
+      "cites_evidence": true,
+      "total_seconds": 0.4158938999999009,
+      "output_tokens": 25
+    },
+    {
+      "id": "q20",
+      "type": "paraphrase",
+      "question": "Come si evita che la freccia del percorso si veda attraverso i muri?",
+      "expected_answer": "Assegnando al modello 3D dell'edificio un materiale invisibile che però partecipa al calcolo della profondità, così da occludere le parti del percorso dietro le pareti.",
+      "answerable": true,
+      "answer": "Si evita che la freccia del percorso si veda attraverso i muri assegnando a tutte le superfici del modello un materiale che ne inibisce la resa cromatica, preservandone però l'effetto sulla determinazione della profondità. Questo materiale rende invisibili le superfici trattate all'osservatore, ma le mantengono nella posizione corretta nel processo di composizione della scena, escludendo così gli elementi virtuali posti al di là di esse [1]. In tal modo, il tracciato del percorso rimane visibile solo nelle porzioni che l'utente potrebbe effettivamente vedere se fosse un oggetto fisico [1].",
+      "abstained": false,
+      "cited_ids": [
+        1
+      ],
+      "cited_sources": "[1] pp. 49-50",
+      "evidence_rank": 1,
+      "cites_evidence": true,
+      "total_seconds": 1.3751557000000503,
+      "output_tokens": 165
+    },
+    {
+      "id": "q21",
+      "type": "lexical",
+      "question": "Quale funzionalità è stata richiesta dal maggior numero di partecipanti?",
+      "expected_answer": "Le notifiche su cambi di aula e avvisi del dipartimento, indicate da cinque partecipanti.",
+      "answerable": true,
+      "answer": "La funzionalità richiesta dal maggior numero di partecipanti è la possibilità di percorsi preferenziali, indicata da quasi metà dei partecipanti [1].",
+      "abstained": false,
+      "cited_ids": [
+        1
+      ],
+      "cited_sources": "[1] pp. 86-87",
+      "evidence_rank": 1,
+      "cites_evidence": true,
+      "total_seconds": 0.5422177000004922,
+      "output_tokens": 41
+    },
+    {
+      "id": "q22",
+      "type": "paraphrase",
+      "question": "Quali problemi tecnici sono emersi usando il visore per molte sessioni di fila?",
+      "expected_answer": "Perdita dell'allineamento in due sessioni consecutive e surriscaldamento, con calo delle prestazioni fino alla perdita del riconoscimento dei gesti.",
+      "answerable": true,
+      "answer": "Il visore ha mostrato problemi tecnici quando è stato utilizzato per molte sessioni di fila, tra cui una perdita dell'allineamento fra modello digitale e ambiente reale, che ha richiesto il riavvio dell'applicazione [3]. Inoltre, il dispositivo ha ridotto le proprie prestazioni o ha cessato il rilevamento dei gesti a causa dell'innalzamento della temperatura, necessitando di un riavvio [3]. Questi problemi non erano emersi durante le prove di sviluppo, poiché queste erano state condotte con sessioni isolate [4].",
+      "abstained": false,
+      "cited_ids": [
+        3,
+        4
+      ],
+      "cited_sources": "[3] pp. 87-88, [4] pp. 90-91",
+      "evidence_rank": 3,
+      "cites_evidence": true,
+      "total_seconds": 1.227922800000215,
+      "output_tokens": 143
+    },
+    {
+      "id": "q23",
+      "type": "paraphrase",
+      "question": "Cosa è stato suggerito per far capire all'utente quando può iniziare a parlare con l'assistente?",
+      "expected_answer": "Un'icona a forma di microfono all'apertura del riquadro dell'assistente.",
+      "answerable": true,
+      "answer": "Si è suggerito l'introduzione di un'icona raffigurante un microfono in corrispondenza dell'apertura del riquadro, al fine di fornire all'utente un segnale esplicito e convenzionale che indica il momento in cui può iniziare a parlare [2].",
+      "abstained": false,
+      "cited_ids": [
+        2
+      ],
+      "cited_sources": "[2] pp. 87",
+      "evidence_rank": 2,
+      "cites_evidence": true,
+      "total_seconds": 0.7425978000001123,
+      "output_tokens": 72
+    },
+    {
+      "id": "q24",
+      "type": "lexical",
+      "question": "Come si orientavano i partecipanti prima di provare l'applicazione?",
+      "expected_answer": "Soprattutto chiedendo ad altre persone (nove su dieci); quattro usavano la segnaletica, quattro l'intuito e uno il sito web.",
+      "answerable": true,
+      "answer": "I partecipanti si orientavano nell'edificio in modo autonomo, poiché avevano familiarità con gli spazi e frequentavano l'edificio da più di due anni, senza essere alla prima visita [1][4]. Questo indica che possedevano già una conoscenza dell'edificio, che il sistema è destinato a supplire [1].",
+      "abstained": false,
+      "cited_ids": [
+        1,
+        4
+      ],
+      "cited_sources": "[1] pp. 89, [4] pp. 81",
+      "evidence_rank": null,
+      "cites_evidence": false,
+      "total_seconds": 0.8277084999999715,
+      "output_tokens": 84
+    },
+    {
+      "id": "q25",
+      "type": "table",
+      "question": "Qual è l'autonomia dichiarata del Meta Quest 3?",
+      "expected_answer": "In media 2,2 ore.",
+      "answerable": true,
+      "answer": "L'autonomia dichiarata del Meta Quest 3 è di 2,2 ore [2].",
+      "abstained": false,
+      "cited_ids": [
+        2
+      ],
+      "cited_sources": "[2] pp. 17-18",
+      "evidence_rank": 2,
+      "cites_evidence": true,
+      "total_seconds": 0.4045648999999685,
+      "output_tokens": 23
+    },
+    {
+      "id": "q26",
+      "type": "table",
+      "question": "Quanti partecipanti hanno dato un voto pari a 3 alla rappresentazione del percorso?",
+      "expected_answer": "Due partecipanti.",
+      "answerable": true,
+      "answer": "Non lo so: l'informazione non è presente nei documenti.",
+      "abstained": true,
+      "cited_ids": [],
+      "cited_sources": "",
+      "evidence_rank": 3,
+      "cites_evidence": false,
+      "total_seconds": 0.3695346999998037,
+      "output_tokens": 16
+    },
+    {
+      "id": "q27",
+      "type": "unanswerable",
+      "question": "Quale database vettoriale è stato utilizzato nel progetto?",
+      "expected_answer": null,
+      "answerable": false,
+      "answer": "Non lo so: l'informazione non è presente nei documenti.",
+      "abstained": true,
+      "cited_ids": [],
+      "cited_sources": "",
+      "evidence_rank": null,
+      "cites_evidence": false,
+      "total_seconds": 0.3555482000001575,
+      "output_tokens": 16
+    },
+    {
+      "id": "q28",
+      "type": "unanswerable",
+      "question": "Quanto costa in euro un visore Meta Quest 3?",
+      "expected_answer": null,
+      "answerable": false,
+      "answer": "Non lo so: l'informazione non è presente nei documenti.",
+      "abstained": true,
+      "cited_ids": [],
+      "cited_sources": "",
+      "evidence_rank": null,
+      "cites_evidence": false,
+      "total_seconds": 0.35254189999977825,
+      "output_tokens": 16
+    },
+    {
+      "id": "q29",
+      "type": "unanswerable",
+      "question": "Su quale GPU è stato eseguito il fine-tuning del modello linguistico?",
+      "expected_answer": null,
+      "answerable": false,
+      "answer": "Non lo so: l'informazione non è presente nei documenti.",
+      "abstained": true,
+      "cited_ids": [],
+      "cited_sources": "",
+      "evidence_rank": null,
+      "cites_evidence": false,
+      "total_seconds": 5.067391800000223,
+      "output_tokens": 16
+    },
+    {
+      "id": "q30",
+      "type": "unanswerable",
+      "question": "Qual è stato il voto finale di laurea dell'autore?",
+      "expected_answer": null,
+      "answerable": false,
+      "answer": "Non lo so: l'informazione non è presente nei documenti.",
+      "abstained": true,
+      "cited_ids": [],
+      "cited_sources": "",
+      "evidence_rank": null,
+      "cites_evidence": false,
+      "total_seconds": 0.37387519999992946,
+      "output_tokens": 16
+    }
+  ]
+}

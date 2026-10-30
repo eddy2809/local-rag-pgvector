@@ -1,0 +1,51 @@
+{
+  "all": {
+    "n": 30,
+    "correct": 23,
+    "partial": 3,
+    "wrong": 4,
+    "faithful": 30
+  },
+  "lexical": {
+    "n": 13,
+    "correct": 10,
+    "partial": 0,
+    "wrong": 3,
+    "faithful": 13
+  },
+  "paraphrase": {
+    "n": 11,
+    "correct": 8,
+    "partial": 3,
+    "wrong": 0,
+    "faithful": 11
+  },
+  "table": {
+    "n": 2,
+    "correct": 1,
+    "partial": 0,
+    "wrong": 1,
+    "faithful": 2
+  },
+  "unanswerable": {
+    "n": 4,
+    "correct": 4,
+    "partial": 0,
+    "wrong": 0,
+    "faithful": 4
+  },
+  "evidence_in_sources": {
+    "n": 20,
+    "correct": 17,
+    "partial": 1,
+    "wrong": 2,
+    "faithful": 20
+  },
+  "evidence_missing": {
+    "n": 6,
+    "correct": 2,
+    "partial": 2,
+    "wrong": 2,
+    "faithful": 6
+  }
+}
