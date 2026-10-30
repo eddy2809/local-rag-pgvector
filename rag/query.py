@@ -28,7 +28,7 @@ def main() -> None:
     print("Retrieved sources (* = cited in the answer):")
     for i, c in enumerate(chunks, start=1):
         mark = "*" if i in answer.cited_ids else " "
-        print(f"  [{i}]{mark} pp. {c.pages:<7} sim {c.similarity:.3f}  {c.content[:70]!r}")
+        print(f"  [{i}]{mark} pp. {c.pages:<7} score {c.score:.3f}  {c.content[:70]!r}")
 
     print("\nTimings:")
     print(f"  question embedding  {timings['embed'] * 1000:7.1f} ms")

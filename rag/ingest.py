@@ -31,6 +31,14 @@ CREATE TABLE IF NOT EXISTS {table} (
 # vector_cosine_ops must match the <=> operator used at query time, otherwise the index is ignored
 CREATE_INDEX = "CREATE INDEX IF NOT EXISTS {index} ON {table} USING hnsw (embedding vector_cosine_ops)"
 
+# Full-text search: a generated column kept in sync by PostgreSQL, plus an inverted (GIN) index
+ADD_TSV_COLUMN = """
+ALTER TABLE {table} ADD COLUMN IF NOT EXISTS content_tsv tsvector
+    GENERATED ALWAYS AS (to_tsvector('italian', content)) STORED
+"""
+CREATE_TSV_INDEX = "CREATE INDEX IF NOT EXISTS {index} ON {table} USING gin (content_tsv)"
+
+
 INSERT = """
 INSERT INTO {table}
     (doc_id, chunk_index, page_start, page_end, label_start, label_end, n_tokens, content, embedding)
@@ -84,6 +92,9 @@ def main() -> None:
     t0 = time.perf_counter()
     with get_connection() as conn:  # one transaction: committed only if everything succeeds
         conn.execute(sql.SQL(CREATE_TABLE).format(table=table, dim=sql.Literal(EMBED_DIM)))
+        conn.execute(sql.SQL(ADD_TSV_COLUMN).format(table=table))
+        conn.execute(sql.SQL(CREATE_TSV_INDEX).format(
+            index=sql.Identifier(f"{args.table}_content_tsv_gin"), table=table))
         conn.execute(sql.SQL("DELETE FROM {table} WHERE doc_id = ANY(%s)").format(table=table),
                      (doc_ids,))
         with conn.cursor() as cur:

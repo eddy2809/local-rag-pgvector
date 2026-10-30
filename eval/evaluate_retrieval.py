@@ -10,14 +10,14 @@ import numpy as np
 
 from rag.db import get_connection
 from rag.embeddings import embed_texts
-from rag.retrieval import dense_search
+from rag.retrieval import dense_search, hybrid_search, lexical_search
 
 QUESTIONS_FILE = Path("eval/questions.jsonl")
 RESULTS_DIR = Path("results")
 K_VALUES = (1, 2, 3, 5)
 MAX_K = 10  # retrieval depth, also used for MRR
 
-SEARCH_METHODS = {"dense": dense_search}
+SEARCH_METHODS = {"dense": dense_search, "lexical": lexical_search, "hybrid": hybrid_search}
 
 
 def normalize(text: str) -> str:
