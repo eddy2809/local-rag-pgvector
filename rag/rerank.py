@@ -19,7 +19,12 @@ def get_model():
         import torch
         from sentence_transformers import CrossEncoder
 
-        device = "cuda" if torch.cuda.is_available() else "cpu"
+        if torch.cuda.is_available():
+            device = "cuda"
+        elif torch.backends.mps.is_available():
+            device = "mps"
+        else:
+            device = "cpu"
         _model = CrossEncoder(RERANKER_MODEL, max_length=MAX_LENGTH, device=device)
     return _model
 
